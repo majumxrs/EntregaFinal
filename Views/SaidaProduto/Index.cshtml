@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ProjetoFinal.Models.SaidaProduto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h>Saida de Produtos</h></h1>
+
+<p>
+    <a asp-action="Create">Criar um Novo Cadastro</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuantidadeSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoSaida)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cliente.ClienteNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.UsuarioNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produto.ProdutoNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuantidadeSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoSaida.TipoSaidaIdDescricao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

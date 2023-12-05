@@ -8,8 +8,8 @@ namespace ProjetoFinal.Models
     public class Pais
     {
 
-        [Column("PaisId")]
-        public int Id { get; }
+        [Column("Id")]
+        public int Id { get; set; }
 
         [Column("PaisNome")]
         [Display(Name = "Nome do Pais")]

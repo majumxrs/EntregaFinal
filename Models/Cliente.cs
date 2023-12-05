@@ -4,11 +4,12 @@ using System.Xml.Linq;
 
 namespace ProjetoFinal.Models
 {
+    [Table("Cliente")]
     public class Cliente
     {
-        [Column("ClienteId")]
+        [Column("Id")]
         [Display(Name = "Código do Cliente")]
-        public int ClienteId { get; set; }
+        public int Id { get; set; }
 
         [Column("ClienteNome")]
         [Display(Name = "Nome")]

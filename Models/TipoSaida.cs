@@ -4,10 +4,10 @@ using System.Xml.Linq;
 
 namespace ProjetoFinal.Models
 {
-    [Table("EntradaProduto")]
+    [Table("TipoSaida")]
     public class TipoSaida
     {
-        [Column("TipoSaidaId")]
+        [Column("Id")]
         [Display(Name = "Código do produto")]
         public int Id { get; set; }
 

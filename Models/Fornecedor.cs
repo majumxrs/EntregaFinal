@@ -7,7 +7,7 @@ namespace ProjetoFinal.Models
     [Table("Fornecedor")]
     public class Fornecedor
     {
-        [Column("FornecedorId")]
+        [Column("Id")]
         [Display(Name = "Código do Fornecedor")]
         public int Id { get; set; }
 

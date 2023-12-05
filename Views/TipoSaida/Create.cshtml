@@ -1,0 +1,31 @@
+﻿@model ProjetoFinal.Models.TipoSaida
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Tipo da Saida</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TipoSaidaIdDescricao" class="control-label"></label>
+                <input asp-for="TipoSaidaIdDescricao" class="form-control" />
+                <span asp-validation-for="TipoSaidaIdDescricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar a Lista de Cadastro</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

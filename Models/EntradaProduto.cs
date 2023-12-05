@@ -7,7 +7,7 @@ namespace ProjetoFinal.Models
     [Table("EntradaProduto")]
     public class EntradaProduto
     {
-        [Column("EntradaProdutoId")]
+        [Column("Id")]
         public int Id { get; set;}
 
         [ForeignKey("ProdutoId")]
