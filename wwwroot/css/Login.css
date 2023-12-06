@@ -1,22 +1,25 @@
 body {
-    background-color: #CCE9FF;
+   background-color: #C1BDF0;
 }
 
 .Quadro {
     margin-left: 597px;
     background-color: rgb(254, 250, 250);
     border-radius: 12px;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
     padding: 25px 25px;
     width: 200px;
-    border: 20px solid rgb(102, 99, 99);
+    border: 10px solid black;
     border-radius: 20px;
+    background-color: #D1BDF0;
 }
 
 .btn {
-    background-color: gray;
+    background-color: #D1BDF0;
     margin-top: 20px;
+    border-radius:5px;
+    margin-left:64px
 }
 
 .titulo {
@@ -30,5 +33,13 @@ body {
 .cor {
     color: red;
 }
-
+.Label{
+    margin-left:77px;
+}
+.input {
+    margin-left: 16px;
+    border-radius:7px;
+    width:172px;
+    height:30px;
+}
 
